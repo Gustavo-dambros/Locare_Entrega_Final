@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anunciar Quadra</title>
+  <link rel="stylesheet" href="questionario.css">
+</head>
+<body>
+
+  <header>
+    <a href="Tela-inicio1.html">
+    <div class="logo">
+    <img src="Logo-removebg-preview.png" alt="Locare Logo">
+  </div>
+</a>
+    <h1>Anuncie sua Quadra</h1>
+  </header>
+
+  <main>
+    <form>
+      <input type="radio" name="step" id="s1" checked />
+      <input type="radio" name="step" id="s2" />
+      <input type="radio" name="step" id="s3" />
+      <input type="radio" name="step" id="s4" />
+      <input type="radio" name="step" id="s5" />
+      <input type="radio" name="step" id="s6" />
+      <input type="radio" name="step" id="s7" />
+
+      <!-- Etapa 1 -->
+      <section class="step f1">
+        <div class="form-content">
+          <h2>Qual o nome do seu espaço esportivo?</h2>
+          <input type="text" name="nome" required />
+          <div class="buttons">
+            <label for="s2" class="button">Próximo</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Etapa 2 -->
+      <section class="step f2">
+        <div class="form-content">
+          <h2>Qual o tipo da quadra?</h2>
+          <select name="tipo" required>
+            <option value="">Selecione</option>
+            <option>Futebol</option>
+            <option>Vôlei</option>
+            <option>Tênis</option>
+            <option>Basquete</option>
+            <option>Outro</option>
+          </select>
+          <div class="buttons">
+            <label for="s1" class="button">Voltar</label>
+            <label for="s3" class="button">Próximo</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Etapa 3 -->
+      <section class="step f3">
+        <div class="form-content">
+          <h2>Qual a localização?</h2>
+          <input type="text" name="local" required placeholder="Rua, número, cidade" />
+          <div class="buttons">
+            <label for="s2" class="button">Voltar</label>
+            <label for="s4" class="button">Próximo</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Etapa 4 -->
+      <section class="step f4">
+        <div class="form-content">
+          <h2>Preço por hora</h2>
+          <input type="number" name="preco" min="0" required />
+          <div class="buttons">
+            <label for="s3" class="button">Voltar</label>
+            <label for="s5" class="button">Próximo</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Etapa 5 -->
+      <section class="step f5">
+        <div class="form-content">
+          <h2>Adicione fotos do espaço</h2>
+          <input type="file" name="fotos" accept="image/*" multiple required />
+          <div class="buttons">
+            <label for="s4" class="button">Voltar</label>
+            <label for="s6" class="button">Próximo</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Etapa 6 -->
+      <section class="step f6">
+        <div class="form-content">
+          <h2>Descrição e Disponibilidade</h2>
+          <textarea name="descricao" rows="3" placeholder="Descrição..." required></textarea>
+          <textarea name="disponibilidade" rows="2" placeholder="Dias e horários disponíveis..." required></textarea>
+          <div class="buttons">
+            <label for="s5" class="button">Voltar</label>
+            <label for="s7" class="button">Próximo</label>
+          </div>
+        </div>
+      </section>
+
+      <!-- Etapa 7 -->
+      <section class="step f7">
+        <h2>Deseja publicar esse anúncio?</h2>
+        <div class="buttons">
+          <label for="s6" class="button">Voltar</label>
+      <a href="Tela-inicio1.html"><button type="button" class="button">Publicar</button></a>
+        <a href="Tela-inicio1.html"><button type="button" class="button">Cancelar</button></a>
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Locare — <a href="#">Termos de uso</a>
+  </footer>
+
+</body>
+</html>

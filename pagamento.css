@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f1f1f; /* fundo mais moderno */
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  width: 100%;
+  background-color: #121212;
+  color: #28b55e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+}
+
+header h2 {
+  flex: 1;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 20px;
+  min-height: calc(100vh - 140px);
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #28b55e;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #28b55e;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s;
+  background: #2a2a2a;
+  color: #fff;
+}
+
+.input-group input:focus {
+  border-color: #28b55e;
+  outline: none;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  background: #28b55e;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+  font-weight: 600;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.4);
+}
+
+.button:hover {
+  background: #2bb66f;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background: #121212;
+  color: #28b55e;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.4);
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .logo {
+    position: static;
+    transform: none;
+    margin-bottom: 8px;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .input-group input {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h2 {
+    font-size: 0.9rem;
+  }
+
+  .container h1 {
+    font-size: 1.4rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

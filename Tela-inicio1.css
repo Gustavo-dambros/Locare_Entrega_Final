@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+body{ font-family: "Comfortaa" , serif;
+    margin: 0;
+    padding: 0;
+    color: #28b55e;
+    background-color: #1f1f1f;;
+}
+
+.containerG{ 
+  position: relative;
+   display: flex;
+    justify-content: center;      
+    height: 100vh;
+  background-color: #1f1f1f; 
+}
+
+.containerM{
+    
+  display: flex;
+  flex-direction: column;  
+  align-items: center;    
+    background-color:  #1f1f1f;;
+    width: 70%;
+    height: 100vh;
+     
+   
+    
+}
+
+ .linha-horizontal {
+    display: flex;
+    gap: 10px; 
+  }
+
+.logo {
+  height: 40px;
+  width: 150px;
+  background-image: url('Logo-removebg-preview.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.login{
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    background-color: #28b55e;
+   right: 20px;
+   top: 20px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   
+}
+
+
+.Cadastro{
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    background-color: #28b55e;
+   right: 20px;
+   top: 80px;
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+   
+}
+
+.pesquisa{
+   
+    color: #28b55e;
+    height: 35px; 
+   width: 300px;
+    margin-top: 40px;
+    border-radius: 20px;
+    border-color: none;
+    padding-left: 15px;
+    background-color: transparent;
+    border: 1px solid #434745;
+
+}
+
+input:focus {
+    color: #28b55e;
+    border: 1px solid white;
+     transition:  0.3s ease;
+    
+    outline: none;        
+    box-shadow: none; 
+     transform-origin: center;
+}
+
+::placeholder {
+    color: #ffffff;
+    transition: color 0.3s ease; 
+}
+
+.pesquisa:focus::placeholder {
+    color: #28b55e;
+}
+
+.title{
+    color: #ffffff;
+    
+}
+
+.preço-tit{
+color: #ffffff;
+font-size: x-large;
+white-space: nowrap;
+margin-top: 20px;
+}
+
+
+
+.item , .item1 , .item2 , .item3 {
+  position: relative;
+  margin-right:10px;
+  height: 100px;
+  width: 170px;
+  background-color: transparent;
+  color: white;
+  flex: 1;
+  padding:  20px;
+  border-radius: 20px;
+  display: flex;           
+  align-items: center;     
+  justify-content: center; 
+  z-index: 10;      
+    border:solid 0.5px #ffffff;
+     background-image: url(piscina.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item2{
+  background-image: url(quadra-basquete.jpg);
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.item3{
+  background-image: url(quadra-externa.jpg);
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.item1{
+  
+  background-image: url(quadra-tenis.jpg);
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.preço{
+    margin-top: 10px;
+    position: absolute;
+    bottom: -35px;
+    right: 20px;
+}
+
+.Destaques{
+  
+color: #ffffff;
+font-size: x-large;
+white-space: nowrap;
+margin-top: 60px;
+}
+ 
+
+
+.login2{
+  position: absolute;
+  height: 40px;
+  width: 120px;
+  color: #ffffff;
+  background-color: #28b55e;
+ right: 160px;
+ top: 20px;
+ border-radius: 5px;
+ border: none;
+ cursor: pointer;
+ 
+}
+
+
+
+@media (max-width: 1024px) {
+  .containerG {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .login, .login2 {
+    width: 200px;
+    max-width: 80%;
+  }
+
+  .containerM {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .linha-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .item, .item1, .item2, .item3 {
+    flex: 1 1 45%;
+    max-width: 45%;
+    min-width: 150px;
+  }
+
+  .title, .preço-tit, .Destaques {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .pesquisa {
+    width: 90%;
+    margin: 0 auto 15px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .login, .login2 {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .linha-horizontal {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item, .item1, .item2, .item3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .title, .preço-tit, .Destaques {
+    font-size: 1.2rem;
+  }
+
+  .containerM {
+    padding: 5px;
+  }
+
+  .pesquisa {
+    width: 100%;
+  }
+}

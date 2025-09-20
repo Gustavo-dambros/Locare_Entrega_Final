@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avaliação do Espaço - Locare</title>
+  <link rel="stylesheet" href="avaliaçao.css">
+</head>
+<body>
+  <header>
+    <a href="Tela-inicio1.html">
+      <div class="logo">
+        <img src="Logo-removebg-preview.png" alt="Locare Logo">
+      </div>
+    </a>
+    Venha nos contar sua experiência
+  </header>
+
+  <div class="container">
+    <aside>
+      <div class="sidebar-container">
+        <h3>Sua Opinião Importa</h3>
+        <p>
+          Nos ajude a melhorar! Deixe seu comentário sobre o espaço que utilizou.
+          Sua opinião é fundamental para mantermos a qualidade do serviço.
+        </p>
+      </div>
+    </aside>
+
+    <main>
+      <form action="" method="post" class="rating-box">
+        <h2>Avalie o Espaço</h2>
+
+        <textarea name="experiencia" class="experiencia" placeholder="Nos conte sua experiência" rows="4" required></textarea>
+
+        <div class="rating-row">
+          <label>Avaliação:</label>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" required /><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+          </div>
+        </div>
+
+        <!-- Checkbox customizado -->
+        <label class="checkbox">
+          <input type="checkbox" name="termos" required />
+          <span></span> Concordo com os termos de uso
+        </label>
+
+     <button type="submit">Enviar Avaliação</button>
+      </form>
+    </main>
+  </div>
+
+  <div class="comentarios">
+    <h3>Comentários de Outros Usuários</h3>
+    <div class="comentario">
+      <p><strong>Maria Silva:</strong> A quadra é excelente! Ótima estrutura e atendimento.</p>
+      <p class="nota"><strong>Avaliação:</strong> ★★★★★</p>
+    </div>
+    <div class="comentario">
+      <p><strong>Valdemir:</strong> Muito bom, mas poderia ter mais iluminação à noite.</p>
+      <p class="nota"><strong>Avaliação:</strong> ★★★★☆</p>
+    </div>
+    <div class="comentario">
+      <p><strong>Miguel Hellmans:</strong> Adorei a experiência! Voltarei com certeza.</p>
+      <p class="nota"><strong>Avaliação:</strong> ★★★★★</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Locação de Espaços. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>

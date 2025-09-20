@@ -1,0 +1,116 @@
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #28b55e, #196b38);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Container principal */
+.container {
+  padding: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: slideIn 0.6s ease-out;
+}
+
+/* Ícone de check */
+.icon-check {
+  font-size: 3rem;
+  color: #28b55e;
+  background-color: #e5f7ed;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Título e parágrafo */
+.card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* Resumo da reserva */
+.resumo {
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.resumo h2 {
+  font-size: 1.2rem;
+  color: #196b38;
+  margin-bottom: 0.8rem;
+}
+
+.resumo ul {
+  list-style: none;
+}
+
+.resumo li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.resumo li span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Botão */
+.botao {
+  display: inline-block;
+  background-color: #28b55e;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #1e874d;
+}
+
+/* Animação */
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
