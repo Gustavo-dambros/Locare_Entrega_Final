@@ -47,7 +47,7 @@ Durante o projeto, a equipe utilizou o **Scrum** como metodologia ágil, passand
 
 ---
 
-LINK GITHUB Pages:  https://gustavo-dambros.github.io/Locare_Entrega_Final/Tela-inicio1
+LINK GITHUB Pages:  https://gustavo-dambros.github.io/Locare_Entrega_Final/Tela-inicio1.html
 
 ## 📂 Estrutura do Projeto
 
