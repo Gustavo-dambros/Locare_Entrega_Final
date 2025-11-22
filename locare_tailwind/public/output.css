@@ -587,11 +587,6 @@ video {
   border-color: rgb(40 181 94 / var(--tw-border-opacity, 1));
 }
 
-.bg-acent_color {
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 181 94 / var(--tw-bg-opacity, 1));
-}
-
 .bg-bg_primary {
   --tw-bg-opacity: 1;
   background-color: rgb(36 36 38 / var(--tw-bg-opacity, 1));
@@ -609,4 +604,9 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.focus\:border-acent_color:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(40 181 94 / var(--tw-border-opacity, 1));
 }
