@@ -6,14 +6,23 @@
   <title>Projeto Tailwind</title>
   <link href="output.css" rel="stylesheet">
 </head>
-<body class="p-0 m-0 bg-bg_primary">
+<body class="p-0 m-0 flex bg-bg_primary">
 
   <div class="h-screen w-screen bg-bg_primary" >
 
-    <header class="w-screen h-20">
-        <input type="text" placeholder="Pesquise" class="rounded-xl border-acent_color border-1 focus: border-1 border-acent_color">
-    </header>
+  <header class="w-screen h-20 bg-acent_color flex justify-center items-center space-x-96"> 
+       
+<div class="h-1"></div>
+
+          <input type="text" placeholder="Pesquise" class="h-5 rounded-md border-acent_color border-1 focus:border-none">
+   
+        <div class="h-1"></div>
+       </header>
  
+       <div class="w-screen h-80 bg-blue-600 flex p-10">
+          <div class="h-60 w-80 bg-bg_primary mx-10 rounded-xl"></div>
+           <div class="h-60 w-80 bg-bg_primary rounded-xl"></div>
+       </div>
 
 
 </div>
