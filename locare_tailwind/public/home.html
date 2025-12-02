@@ -5,27 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto Tailwind</title>
   <link href="output.css" rel="stylesheet">
+  <script src="locare.js" defer></script>
+
 </head>
 <body class="p-0 m-0 flex bg-bg_primary">
 
-  <div class="h-screen w-screen bg-bg_primary" >
+  <div class="h-screen w-screen bg-bg_primary_dark " >
 
-  <header class="w-screen h-20 bg-bg_primary border-b-2 border-bg_secondary
-   flex justify-between items-center fixed px-2"> 
+  <header class="w-screen h-20 bg-bg_primary_dark border-b-2 border-bg_secondary_dark
+   flex justify-between items-center fixed px-2 "> 
        
  <img src="./Img/Logo-removebg-preview.png" class=" h-24" alt="">
 
-          <input type="text" placeholder="Pesquise" class="h-8 w-96 left-1/2 flex items-center rounded-xl border  bg-transparent p-2 outline-none caret-text_color_activate placeholder:text-text_color focus:placeholder:text-text_color_activate  focus:scale-105
-         transform transition duration-200
+          <input id="name" type="text" placeholder="Pesquise" class="h-8 w-96 left-1/2 flex items-center rounded-2xl border border-deactivate_text_color focus:border-text_color bg-transparent p-2 outline-none caret-deactivate_text_color focus:caret-text_color placeholder:text-deactivate_text_color text-deactivate_text_color focus:placeholder:text-text_color   focus:scale-105 
+         transform transition duration-300
           ">
    
-        <div class="h-1"></div>
+        <div class="h-14"  onclick="mudarMenu()"><img id="menu_icon" class="h-14"  src="./Img/deactivate_menu_icon.svg"alt=""></div>
+
        </header>
- 
-       <div class="w-screen h-80 bg-bg_primary flex p-10 mt-16">
-          <div class="h-60 w-80 bg-acent_color mx-10 rounded-xl border-1 border-"></div>
-           <div class="h-60 w-80 bg-acent_color rounded-xl"></div>
+
+       <nav id="sidebar" 
+    class="fixed h-screen w-80 bg-red-50 right-0
+    translate-x-full">
+</nav>
+
+       
+            
+       
+
+<div class=" h-12 w-screen text-text_color  mt-24">
+  <div>
+    <h2>Olá, <span id="boasVindas"> mensagem de boas vindas mexer no futuro</span></h3>
+  </div>
+</div>
+
+ <h1 class="mx-5 text-text_color text-2xl">Mais Visitados da semana</h1>
+       <div class="w-screen h-80 bg-bg_tertiary_dark flex p-10 mt-2"> 
+        
+          <div class="h-60 w-80 bg-accent_color mx-10 rounded-xl border-1 border-"></div>
+           <div class="h-60 w-80 bg-accent_color rounded-xl"></div>
        </div>
+       
 
 
 </div>

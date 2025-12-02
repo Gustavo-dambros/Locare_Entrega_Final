@@ -3,13 +3,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg_primary:'#242426',
-        bg_secondary:'i
-        
-        acent_color:'#28b55e',
-        diactivate_color:'#053B20',
+        accent_color:'#28B55E',
+        deactivate_accent:'#053B20',
+        bg_primary_dark:'#242426',
+        bg_secondary_dark:'#575757',
+        bg_tertiary_dark:'#19191B',
         text_color:'#F3ECF5',
-        text_color_activate:'#BEB8BF',
+        deactivate_text_color:'#BEB8BF',
 
       },
     },
